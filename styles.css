@@ -1,0 +1,21 @@
+.typed-cursor {
+    font-size: inherit;
+}
+html {
+    scroll-behavior: smooth;
+  }
+a, a:hover, a:active {
+    color: white;
+}
+i, p {
+    display: inline;
+}
+
+::-webkit-scrollbar{
+    display: none;
+  }
+
+.btn:hover {
+    background-color: #212121 !important;
+    color: #fff !important;
+}

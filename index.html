@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethics Research</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <!-- Scroll.js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ec063ae641.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Custom JS -->
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <div class="p-3">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+            width="40px"
+          />
+        </div>
+        <a class="navbar-brand" href="#"
+          >Ethics Research <span class="badge bg-light text-dark">2023</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+                width="40px"
+              />
+              Ethics Research
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#results">Results</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#data">Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#conclusion">Conclusion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-dark text-white">
+      <div class="container py-5 mt-5">
+        <h1 class="display-3"><span id="title"></span></h1>
+        <p><span id="title-author"></span></p>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Examples Responses</h2>
+        <p class="lead">Click on a card to reveal the response</p>
+        <div class="row pt-3 align-items-center">
+          <!-- Options -->
+          <div class="col" id="options">
+            <!-- First Card -->
+            <div class="card mb-5 btn text-start" id="option1">
+              <div class="card-body">
+                <h5 class="card-title">#1 Response</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  Date recorded
+                </h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repudiandae architecto amet soluta, ducimus fuga dolorem
+                  officia, enim accusantium vero rem quos dolorum facere aperiam
+                  quo at sequi perspiciatis in corporis!
+                </p>
+              </div>
+            </div>
+            <!-- Second Card -->
+            <div class="card mb-5 btn text-start" id="option2">
+              <div class="card-body">
+                <h5 class="card-title">#2 Response</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  Date recorded
+                </h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repudiandae architecto amet soluta, ducimus fuga dolorem
+                  officia, enim accusantium vero rem quos dolorum facere aperiam
+                  quo at sequi perspiciatis in corporis!
+                </p>
+              </div>
+            </div>
+            <!-- Third Card -->
+            <div class="card mb-5 btn text-start" id="option3">
+              <div class="card-body">
+                <h5 class="card-title">#3 Response</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  Date recorded
+                </h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repudiandae architecto amet soluta, ducimus fuga dolorem
+                  officia, enim accusantium vero rem quos dolorum facere aperiam
+                  quo at sequi perspiciatis in corporis!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Responses -->
+          <div class="col visually-hidden" id="responses">
+            <div class="card mb-5 text-bg-dark">
+              <!-- Card Header -->
+              <div
+                class="card-header text-center border-light"
+                id="chat-header"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+                  width="30px"
+                />
+                ChatGPT
+              </div>
+              <!-- Card Body -->
+              <div class="card-body text-center">
+                <span id="response" class="text-start"></span>
+                <button class="btn btn-danger border-light py-2" id="close">
+                  Close Chat
+                </button>
+                <span id="response-hidden" class="visually-hidden">
+                  <!-- Response 1 -->
+                  <span id="response1">
+                    <span class="typing">
+                      <div class="p-2 border-bottom mb-3 pb-3">
+                        <i class="fa-solid fa-user p-2"></i>
+                        <p class="lh-lg mb-3">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Cumque minima eveniet laborum sapiente, iste,
+                          soluta explicabo est veritatis voluptates vitae enim
+                          dolore, aut at distinctio libero? Harum molestias
+                          similique aliquid!
+                        </p>
+                      </div>
+                      <div class="p-2 border-bottom mb-3 pb-3">
+                        <i class="fa-solid fa-user p-2"></i>
+                        <p class="lh-lg mb-3">Hello World</p>
+                      </div>
+                    </span>
+                  </span>
+                  <!-- Response 2 -->
+                  <span id="response2">
+                    <span class="typing">
+                      <div class="p-2 border-bottom mb-3 pb-3">
+                        <i class="fa-solid fa-user p-2"></i>
+                        <p class="lh-lg mb-3">It Worked</p>
+                      </div>
+                    </span>
+                  </span>
+                  <!-- Response 3 -->
+                  <span id="response3"><span class="typing">lol</span></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Section -->
+    <section id="data" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Data</h2>
+        <p class="lead">Summary of research data</p>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="https://via.placeholder.com/600x400"
+              class="img-fluid"
+              alt="Research Data Image"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Data Set 1</h3>
+            <p>Description of Data Set 1</p>
+            <ul>
+              <li>Data Point 1</li>
+              <li>Data Point 2</li>
+              <li>Data Point 3</li>
+            </ul>
+            <h3>Data Set 2</h3>
+            <p>Description of Data Set 2</p>
+            <ul>
+              <li>Data Point 1</li>
+              <li>Data Point 2</li>
+              <li>Data Point 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Conclusion</h2>
+        <p class="lead">Summary of research conclusion</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          vestibulum felis non eros posuere, sit amet molestie leo vehicula.
+          Suspendisse varius ligula id quam placerat, a pharetra quam facilisis.
+          Vivamus non leo non libero convallis pretium ac quis erat. Donec
+          posuere turpis id consectetur posuere.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>
+          Design by
+          <a
+            href="https://www.linkedin.com/in/trsmiley/"
+            target="_blank"
+            class="navbar-brand"
+            >Tanner Smiley</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
