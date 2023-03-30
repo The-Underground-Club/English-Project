@@ -19,3 +19,7 @@ i, p {
     background-color: #212121 !important;
     color: #fff !important;
 }
+#card {
+    width: 75%;
+    margin: auto;
+}

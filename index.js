@@ -19,11 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
   var option2 = document.getElementById("option2");
   var option3 = document.getElementById("option3");
   var text = document.getElementById("responses");
+  var options = document.getElementById("options");
   var close = document.getElementById("close");
 
   close.addEventListener("click", function () {
     if (!running) {
       text.classList.add("visually-hidden");
+      options.classList.remove("visually-hidden");
     }
   });
 
@@ -31,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   option1.addEventListener("click", function () {
     if (!running) {
       text.classList.remove("visually-hidden");
+      options.classList.add("visually-hidden");
       running = true;
       document.getElementById("response").innerHTML = "";
       var typed = new Typed("#response", {
@@ -47,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
   option2.addEventListener("click", function () {
     if (!running) {
       text.classList.remove("visually-hidden");
+      options.classList.add("visually-hidden");
       running = true;
       document.getElementById("response").innerHTML = "";
       var typed = new Typed("#response", {
@@ -63,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   option3.addEventListener("click", function () {
     if (!running) {
       text.classList.remove("visually-hidden");
+      options.classList.add("visually-hidden");
       running = true;
       document.getElementById("response").innerHTML = "";
       var typed = new Typed("#response", {
