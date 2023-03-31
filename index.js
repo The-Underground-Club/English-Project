@@ -3,7 +3,9 @@ ScrollReveal().reveal("#hero, #results, #data, #conclusion", {
   viewFactor: 0.3,
 });
 
+/* Typed.js Animations */
 document.addEventListener("DOMContentLoaded", function () {
+  /* Title Animations */
   var title = new Typed("#title", {
     strings: ["Ethics of Microsoft and ChatGPT"],
     typeSpeed: 40,
@@ -14,14 +16,18 @@ document.addEventListener("DOMContentLoaded", function () {
     showCursor: false,
   });
 
-  //ChatGPT Box
-  var option1 = document.getElementById("option1");
-  var option2 = document.getElementById("option2");
-  var option3 = document.getElementById("option3");
+  /* ChatGPT Box */
+
+  // Set DOM Selectors
+  const buttons = document.querySelectorAll("#options .card");
   var text = document.getElementById("responses");
   var options = document.getElementById("options");
   var close = document.getElementById("close");
 
+  //Keeps User from overlaping instances
+  var running = false;
+
+  //Close Chat Button
   close.addEventListener("click", function () {
     if (!running) {
       text.classList.add("visually-hidden");
@@ -29,55 +35,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  var running = false;
-  option1.addEventListener("click", function () {
-    if (!running) {
-      text.classList.remove("visually-hidden");
-      options.classList.add("visually-hidden");
-      running = true;
-      document.getElementById("response").innerHTML = "";
-      var typed = new Typed("#response", {
-        stringsElement: "#response1",
-        typeSpeed: 5,
-        showCursor: false,
-        onComplete: function () {
-          running = false;
-        },
-      });
-    }
-  });
+  // Add a click event listener to each button
+  buttons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      // Grab the data-response attribute from event target
+      const data = e.currentTarget.getAttribute("data-response");
 
-  option2.addEventListener("click", function () {
-    if (!running) {
-      text.classList.remove("visually-hidden");
-      options.classList.add("visually-hidden");
-      running = true;
-      document.getElementById("response").innerHTML = "";
-      var typed = new Typed("#response", {
-        stringsElement: "#response2",
-        typeSpeed: 5,
-        showCursor: false,
-        onComplete: function () {
-          running = false;
-        },
-      });
-    }
-  });
+      //Check if an instance is running
+      if (!running) {
+        //Erase past Typed.js animation
+        document.getElementById("response").innerHTML = "";
 
-  option3.addEventListener("click", function () {
-    if (!running) {
-      text.classList.remove("visually-hidden");
-      options.classList.add("visually-hidden");
-      running = true;
-      document.getElementById("response").innerHTML = "";
-      var typed = new Typed("#response", {
-        stringsElement: "#response3",
-        typeSpeed: 5,
-        showCursor: false,
-        onComplete: function () {
-          running = false;
-        },
-      });
-    }
+        //Update instance variable and UI
+        running = true;
+        close.classList.add("disabled");
+        text.classList.remove("visually-hidden");
+        options.classList.add("visually-hidden");
+
+        //start the Typed.js Animation
+        var typed = new Typed("#response", {
+          stringsElement: data,
+          typeSpeed: 5,
+          showCursor: false,
+          onComplete: function () {
+            running = false;
+            close.classList.remove("disabled");
+          },
+        });
+      }
+    });
   });
 });

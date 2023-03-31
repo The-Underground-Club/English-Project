@@ -15,7 +15,7 @@ i, p {
     display: none;
   }
 
-.btn:hover {
+#option:hover {
     background-color: #212121 !important;
     color: #fff !important;
 }
