@@ -23,3 +23,17 @@ i, p {
     width: 75%;
     margin: auto;
 }
+
+#icon-l, #icon-d {
+    transition: .15s;
+    cursor: pointer;
+}
+
+#icon-l:hover {
+    background: #212121;
+    color: white;
+}
+#icon-d:hover {
+    background: white !important;
+    color: #212121 !important;
+}

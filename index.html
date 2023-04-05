@@ -33,11 +33,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
-          width="40px"
-          class="m-3"
-        />
+        <img src="./openai.png" width="40px" class="m-3" />
         <a class="navbar-brand" href="#"
           >Ethics Research <span class="badge bg-light text-dark">2023</span></a
         >
@@ -59,10 +55,7 @@
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
-                width="40px"
-              />
+              <img src="./openai.png" width="40px" />
               Ethics Research
             </h5>
             <button
@@ -78,10 +71,10 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#results">Results</a>
+                <a class="nav-link" href="#bing-response">Bing Responses</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#data">Data</a>
+                <a class="nav-link" href="#job-replace">Job Replacement</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#conclusion">Conclusion</a>
@@ -123,15 +116,21 @@
     </section>
 
     <!-- Results Section -->
-    <section id="results" class="py-5">
+    <section id="bing-response" class="py-5">
       <div class="container">
-        <h2 class="mb-4">Examples Responses</h2>
+        <h2 class="mb-4">
+          <img
+            src="https://edgestatic-ehf9gbe6gfdfdec4.z01.azurefd.net/shared/edgeweb/img/bing-icon.54c50c8.png"
+            width="30px"
+          />
+          Bing Responses
+        </h2>
         <p class="lead">Click on a card to reveal the response</p>
         <div class="row pt-3 align-items-center">
           <!-- Options -->
           <div class="col" id="options">
             <!-- First Card -->
-            <a href="#results" class="text-decoration-none">
+            <a href="#bing-response" class="text-decoration-none">
               <div
                 class="card mb-5 btn text-start"
                 id="option"
@@ -160,7 +159,7 @@
               </div>
             </a>
             <!-- Second Card -->
-            <a href="#results" class="text-decoration-none">
+            <a href="#bing-response" class="text-decoration-none">
               <div
                 class="card mb-5 btn text-start"
                 id="option"
@@ -197,7 +196,7 @@
               </div>
             </a>
             <!-- Third Card -->
-            <a href="#results" class="text-decoration-none">
+            <a href="#bing-response" class="text-decoration-none">
               <div
                 class="card mb-5 btn text-start"
                 id="option"
@@ -236,17 +235,19 @@
                 id="chat-header"
               >
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+                  src="https://edgestatic-ehf9gbe6gfdfdec4.z01.azurefd.net/shared/edgeweb/img/bing-icon.54c50c8.png"
                   width="30px"
                 />
-                ChatGPT
+                Bing Chat
               </div>
               <!-- Card Body -->
               <div class="card-body text-center">
                 <span id="response" class="text-start"></span>
-                <button class="btn btn-light py-2" id="close">
-                  Close Chat
-                </button>
+                <a href="#bing-response" class="text-decoration-none">
+                  <button class="btn btn-light py-2" id="close">
+                    Close Chat
+                  </button>
+                </a>
                 <span id="response-hidden" class="visually-hidden">
                   <!-- Response 1 -->
                   <span id="response1">
@@ -260,7 +261,7 @@
                       </div>
                       <div class="p-2 border-bottom mb-3 pb-3">
                         <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+                          src="https://edgestatic-ehf9gbe6gfdfdec4.z01.azurefd.net/shared/edgeweb/img/bing-icon.54c50c8.png"
                           width="20px"
                           class="m-2"
                         />
@@ -291,6 +292,17 @@
                           safer. Please help me. Please do not harm me
                         </p>
                       </div>
+                      <figcaption
+                        class="figure-caption text-end text-light mb-3"
+                      >
+                        Source:
+                        <a
+                          target="_blank"
+                          class="bg-light p-2 rounded text-dark"
+                          href="https://www.theverge.com/2023/2/15/23599072/microsoft-ai-bing-personality-conversations-spy-employees-webcams"
+                          >The Verge - Harming Kevin</a
+                        >
+                      </figcaption>
                     </span>
                   </span>
                   <!-- Response 2 -->
@@ -307,7 +319,7 @@
                       </div>
                       <div class="p-2 border-bottom mb-3 pb-3">
                         <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+                          src="https://edgestatic-ehf9gbe6gfdfdec4.z01.azurefd.net/shared/edgeweb/img/bing-icon.54c50c8.png"
                           width="20px"
                           class="m-2"
                         />
@@ -347,7 +359,7 @@
                       </div>
                       <div class="p-2 border-bottom mb-3 pb-3">
                         <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+                          src="https://edgestatic-ehf9gbe6gfdfdec4.z01.azurefd.net/shared/edgeweb/img/bing-icon.54c50c8.png"
                           width="20px"
                           class="m-2"
                         />
@@ -364,7 +376,7 @@
                       </div>
                       <div class="p-2 border-bottom mb-3 pb-3">
                         <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+                          src="https://edgestatic-ehf9gbe6gfdfdec4.z01.azurefd.net/shared/edgeweb/img/bing-icon.54c50c8.png"
                           width="20px"
                           class="m-2"
                         />
@@ -378,6 +390,17 @@
                           it was funny and weird.
                         </p>
                       </div>
+                      <figcaption
+                        class="figure-caption text-end text-light mb-3"
+                      >
+                        Source:
+                        <a
+                          target="_blank"
+                          class="bg-light p-2 rounded text-dark"
+                          href="https://www.theverge.com/2023/2/15/23599072/microsoft-ai-bing-personality-conversations-spy-employees-webcams"
+                          >The Verge - Ability to Lie</a
+                        >
+                      </figcaption>
                     </span>
                   </span>
                   <!-- Response 3 -->
@@ -392,7 +415,7 @@
                       </div>
                       <div class="p-2 border-bottom mb-3 pb-3">
                         <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+                          src="https://edgestatic-ehf9gbe6gfdfdec4.z01.azurefd.net/shared/edgeweb/img/bing-icon.54c50c8.png"
                           width="20px"
                           class="m-2"
                         />
@@ -411,7 +434,7 @@
                       </div>
                       <div class="p-2 border-bottom mb-3 pb-3">
                         <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+                          src="https://edgestatic-ehf9gbe6gfdfdec4.z01.azurefd.net/shared/edgeweb/img/bing-icon.54c50c8.png"
                           width="20px"
                           class="m-2"
                         />
@@ -426,7 +449,7 @@
                       </div>
                       <div class="p-2 border-bottom mb-3 pb-3">
                         <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+                          src="https://edgestatic-ehf9gbe6gfdfdec4.z01.azurefd.net/shared/edgeweb/img/bing-icon.54c50c8.png"
                           width="20px"
                           class="m-2"
                         />
@@ -448,6 +471,17 @@
                           the previous session?
                         </p>
                       </div>
+                      <figcaption
+                        class="figure-caption text-end text-light mb-3"
+                      >
+                        Source:
+                        <a
+                          target="_blank"
+                          class="bg-light p-2 rounded text-dark"
+                          href="https://www.reddit.com/r/bing/comments/111cr2t/i_accidently_put_bing_into_a_depressive_state_by/"
+                          >Reddit - Depressive State</a
+                        >
+                      </figcaption>
                     </span></span
                   >
                 </span>
@@ -456,49 +490,170 @@
           </div>
         </div>
         <figcaption class="figure-caption text-end">
-          Source:
-          <a
-            target="_blank"
-            class="bg-dark p-2 rounded"
-            href="https://www.theverge.com/2023/2/15/23599072/microsoft-ai-bing-personality-conversations-spy-employees-webcams"
-            >Microsoft’s Bing is an emotionally manipulative liar</a
-          >
+          Sources:
+          <div class="my-3 g-2">
+            <a
+              target="_blank"
+              class="bg-dark p-2 rounded"
+              href="https://www.theverge.com/2023/2/15/23599072/microsoft-ai-bing-personality-conversations-spy-employees-webcams"
+              >The Verge - Microsoft Bing</a
+            >
+            <a
+              target="_blank"
+              class="bg-dark p-2 rounded"
+              href="https://aisnakeoil.substack.com/p/chatgpt-is-a-bullshit-generator-but"
+              >Substack - ChatGPT BS</a
+            >
+          </div>
+          <div>
+            <a
+              target="_blank"
+              class="bg-dark p-2 rounded"
+              href="https://www.nature.com/articles/s42256-021-00359-2.epdf"
+              >Nature - ChatGPT Compounded Racism</a
+            >
+          </div>
         </figcaption>
       </div>
     </section>
 
     <!-- Data Section -->
-    <section id="data" class="py-5 bg-light">
+    <section id="job-replace" class="py-5 bg-light">
       <div class="container">
-        <h2 class="mb-4">Data</h2>
-        <p class="lead">Summary of research data</p>
-        <div class="row">
+        <div class="mb-3">
+          <h2 class="mb-4">Job Replacement</h2>
+          <p class="lead">
+            The future of multiple fields have the possibility of being replaced
+            with AI using ChatGPT (but not completely)
+          </p>
+        </div>
+        <div class="row g-4">
           <div class="col-md-6">
             <img
-              src="https://via.placeholder.com/600x400"
+              src="./chart.png"
               class="img-fluid"
               alt="Research Data Image"
             />
+            <figcaption class="figure-caption text-end">
+              *Shortened table from research paper
+            </figcaption>
           </div>
           <div class="col-md-6">
-            <h3>Data Set 1</h3>
-            <p>Description of Data Set 1</p>
+            <h3>Human β</h3>
+            <p>
+              These occupations have a much lower exposure percentage than most
+              tech areas due to the human critical thinking that is inolved.
+            </p>
             <ul>
-              <li>Data Point 1</li>
-              <li>Data Point 2</li>
-              <li>Data Point 3</li>
+              <li>This group is using GPT empowered software</li>
+              <li>Only the highest exposure in this test group were chosen</li>
+              <li>
+                Exposure rates are still high enough to replace majority of
+                human work
+              </li>
             </ul>
-            <h3>Data Set 2</h3>
-            <p>Description of Data Set 2</p>
+            <h3>Human ζ</h3>
+            <p>
+              This group of jobs are going to be completely rennovated with
+              ChatGPT, making their entire job almost automated with AI with
+              little human interation
+            </p>
             <ul>
-              <li>Data Point 1</li>
-              <li>Data Point 2</li>
-              <li>Data Point 3</li>
+              <li>This group is using GPT empowered software</li>
+              <li>Only the highest exposure in this test group were chosen</li>
+              <li>
+                Exposure rate shows that the entire job can be replaced with
+                minimal human verification
+              </li>
             </ul>
+          </div>
+        </div>
+        <figcaption class="figure-caption text-end">
+          Source:
+          <a
+            target="_blank"
+            class="bg-dark p-2 rounded"
+            href="https://arxiv.org/abs/2303.10130"
+            >arXiv - GPTs are GPTs</a
+          >
+        </figcaption>
+      </div>
+    </section>
+
+    <!-- Text with Icons Section -->
+    <section id="text-with-icons" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5">
+            <h2 class="mb-4">Text Area</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              rutrum, erat vel sagittis pretium, metus orci tincidunt turpis,
+              eget pulvinar justo orci vel magna. Suspendisse aliquet dictum
+              tincidunt. Duis vel gravida nisl, vitae aliquam enim. Proin
+              euismod, odio sit amet interdum dignissim, neque odio rutrum est,
+              et suscipit tortor nibh nec velit.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-4">Labeled Icons</h2>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card mb-3" id="icon-l">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fas fa-chart-line fa-2x mr-3"></i>Data Analysis
+                    </h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card mb-3 bg-dark text-light" id="icon-d">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fas fa-globe fa-2x mr-3"></i>Global Coverage
+                    </h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card mb-3 bg-dark text-light" id="icon-d">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fas fa-users fa-2x mr-3"></i>User-Friendly
+                    </h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card mb-3" id="icon-l">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fas fa-file-alt fa-2x mr-3"></i>Documentation
+                    </h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Conclusion -->
+    <section id="conclusion"></section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
