@@ -29,6 +29,9 @@
 
     <!-- Custom JS -->
     <script type="module" src="index.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -66,7 +69,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body">
+          <div class="offcanvas-body" id="nav-items">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
@@ -78,7 +81,7 @@
                 <a class="nav-link" href="#job-replace">Job Replacement</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#conclusion">Conclusion</a>
+                <a class="nav-link" href="#gpt-team">GPT's Ethics Team</a>
               </li>
             </ul>
           </div>
@@ -582,74 +585,95 @@
     </section>
 
     <!-- Text with Icons Section -->
-    <section id="text-with-icons" class="py-5">
+    <section id="gpt-team" class="py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 mb-5">
-            <h2 class="mb-4">Text Area</h2>
-            <p class="lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              rutrum, erat vel sagittis pretium, metus orci tincidunt turpis,
-              eget pulvinar justo orci vel magna. Suspendisse aliquet dictum
-              tincidunt. Duis vel gravida nisl, vitae aliquam enim. Proin
-              euismod, odio sit amet interdum dignissim, neque odio rutrum est,
-              et suscipit tortor nibh nec velit.
-            </p>
+        <div class="mb-4">
+          <h2 class="mb-4">GPT's Ethics Team</h2>
+          <p class="lead">
+            Microsoft's ethics team plays a critical role in maintaining the
+            ethical use of ChatGPT and other AI systems developed by the
+            company, and since Microsoft just fired their entire ethics team
+            these major ethic principles will be lost. The ethics team is
+            responsible for ensuring that Microsoft's AI systems are developed,
+            deployed, and used in a responsible and ethical manner. This
+            includes setting ethical guidelines and standards for the
+            development and deployment of AI systems, identifying potential
+            ethical concerns and risks, and ensuring that AI systems are
+            designed to minimize any potential harm to users.
+          </p>
+        </div>
+        <h2 class="mb-4">Four major ethical restrictions</h2>
+        <div class="row g-3 mb-5">
+          <div class="col-sm-6">
+            <div class="card mb-4 h-50" id="icon-l">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-database m-3 fs-2"></i>Content
+                  Restrictions
+                </h5>
+                <p class="card-text">
+                  ChatGPT is designed to not generate or engage in content that
+                  promotes hate speech, violence, discrimination, or any other
+                  form of harmful content. It is programmed to flag such content
+                  and prevent it from being generated or communicated.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-3 bg-dark text-light h-50" id="icon-d">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-skull-crossbones fs-2 m-3"></i>Misuse
+                  Restrictions
+                </h5>
+                <p class="card-text">
+                  ChatGPT is not allowed to be used for any purpose that is
+                  illegal, unethical, or harmful. This includes not being used
+                  to create fake news, spread propaganda, or engage in
+                  cyberbullying.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <h2 class="mb-4">Labeled Icons</h2>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="card mb-3" id="icon-l">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <i class="fas fa-chart-line fa-2x mr-3"></i>Data Analysis
-                    </h5>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </div>
-                </div>
+          <div class="col-sm-6">
+            <div class="card mb-4 bg-dark text-light h-50" id="icon-d">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fas fa-users fs-2 m-3"></i>Privacy Restrictions
+                </h5>
+                <p class="card-text">
+                  ChatGPT is programmed to protect user privacy and not to
+                  collect any personal information without the user's explicit
+                  consent. Additionally, ChatGPT is prohibited from sharing any
+                  user data with third parties without the user's consent.
+                </p>
               </div>
-              <div class="col-sm-6">
-                <div class="card mb-3 bg-dark text-light" id="icon-d">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <i class="fas fa-globe fa-2x mr-3"></i>Global Coverage
-                    </h5>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="card mb-3 bg-dark text-light" id="icon-d">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <i class="fas fa-users fa-2x mr-3"></i>User-Friendly
-                    </h5>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="card mb-3" id="icon-l">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <i class="fas fa-file-alt fa-2x mr-3"></i>Documentation
-                    </h5>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </div>
-                </div>
+            </div>
+            <div class="card mb-3 h-50" id="icon-l">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-scale-unbalanced fs-2 m-3"></i>Bias
+                  Restrictions
+                </h5>
+                <p class="card-text">
+                  ChatGPT is programmed to minimize bias and to avoid
+                  perpetuating stereotypes or prejudice. It is designed to
+                  generate responses that are neutral, factual, and
+                  non-judgmental, and not to discriminate against any particular
+                  group or individual.
+                </p>
               </div>
             </div>
           </div>
         </div>
+        <figcaption class="figure-caption text-end">
+          Source:
+          <a
+            target="_blank"
+            class="bg-dark p-2 rounded"
+            href="https://mashable.com/article/elon-musk-ai-ethics-safety-microsoft-twitter-layoffs"
+            >Mashable - Microsoft layoffs</a
+          >
+        </figcaption>
       </div>
     </section>
 
